@@ -30,7 +30,7 @@ namespace Business.Conxrete
 
         public IDataResult<List<Product>>GetAll()
         {
-            if (DateTime.Now.Hour==22)
+            if (DateTime.Now.Hour == 00)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
