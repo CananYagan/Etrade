@@ -1,5 +1,5 @@
 using Business.Abstract;
-using Business.Conxrete;
+using Business.Concrete;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Builder;
@@ -30,8 +30,8 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IProductManager, ProductManager>(); //Arka planda refarans oluþtur.
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductManager, ProductManager>(); //Arka planda refarans oluþtur.
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

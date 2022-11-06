@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business.Conxrete
+namespace Business.Concrete
 {
     public class CategoryManager : ICategoryManager
     {
